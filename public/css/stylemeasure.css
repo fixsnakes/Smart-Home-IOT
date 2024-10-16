@@ -1,0 +1,757 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+}
+
+.sidebar{
+    color: white;
+    width: 250px;
+    height: 100%;
+    padding: 30px;
+    background-color:orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+}
+
+
+.sidebar-background{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    opacity: 20%;
+}
+
+#smart_home_logo{
+    width: 80px;
+    height: 80px;
+}
+
+.logosmarthome{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.ulmenu{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.ulmenu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+
+
+
+.ulmenu li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.ulmenu li:hover{
+
+    background-color: rgba(255, 255, 255, 0.13);
+
+}
+
+
+.logomenu{
+    width: 30px;
+    height: 30px;
+
+}
+
+.ulmenu li:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.13);
+
+}
+
+
+.social-container{
+    margin-top: 100px;
+}
+
+.social-container ul{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.social-container ul li{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.fa-brands{
+    font-size: 40px;
+}
+
+
+
+.main-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F8;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    margin-left: 250px;
+}
+
+
+
+.nav-menu{
+    width: 100%;
+    height: 60px;
+    background-color: #E59E1C;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+
+#user{
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    
+}
+
+.nav-menu ul{
+    margin-right: 50px;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+#name{
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+.main-analyis{
+    margin-top: 10px;
+    padding: 10px;
+    width: 1000px;
+    height: 100%;
+    background-color: #F7F7F8;
+    
+
+}
+
+
+
+.main-analyis .inforA{
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    margin-bottom: 10px;
+    
+}
+
+
+ 
+
+
+.main-analyis .inforA .cambien{
+
+    border: 1px solid #DFDFDF;
+    border-radius: 10px;
+    padding: 30px;
+    width: 250px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+
+
+.detail-info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+
+}
+
+
+
+
+.detail-info p {
+    font-size: 18px;
+}
+
+.picDetail {
+    width: 30px;
+    height: 30px;
+}
+
+.cambien{
+    background-color: white;
+}
+
+.cambien .numberdetail {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+.inforB{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.chartcontainer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 650px;
+    height:100%;
+    border: 2px solid #DFDFDF;
+    padding: 20px;
+    
+}
+
+.chartcontainer p{
+    font-size: 13px;
+}
+
+
+.devicecontainer img{
+    width: 80px;
+}
+
+.devicecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.device{
+
+    width: 320px;
+
+    height: 100px;
+    border: 1px solid #DFDFDF ;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    display: flex;  
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+.device p{
+
+    width: 20px;
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+
+
+.fa-brands{
+    color: white;
+}
+
+.social-container{
+    margin-top: 20px;
+}
+
+.fa-solid{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+.iotdescription{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.nhietdo{
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.doam{
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.anhsang{
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.fa-temperature-three-quarters{
+    font-size: 40px;
+}
+
+.fa-water{
+    font-size: 40px;
+}
+
+.fa-lightbulb{
+    font-size: 40px;
+}
+
+#description{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.numberdetail{
+    font-weight: bold;
+}
+
+
+.button{
+    width: 60px;
+    height: 30px;
+    border: none;
+    outline: none;
+
+    border-radius: 20px;
+
+    color: white;
+}
+
+
+
+.button:hover{
+    cursor: pointer;
+}
+
+.ON{
+    background-color: #86D293;
+}
+
+
+.OFF{
+    background-color: #EF5A6F;
+}
+
+
+.ON:active{
+    padding-bottom: 2px;
+}
+
+
+.OFF:active{
+    padding-bottom: 2px;
+}
+
+
+.fa-solid{
+
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+
+
+.fa-brands{
+    font-size: 30px;
+}
+
+
+.logosmarthome{
+    margin-bottom: 40px;
+}
+
+#DataMeasure {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: scroll;
+    height: 500px;
+}
+
+#DataMeasure thead {
+    background-color: #E59E1C;
+    color: white;
+    text-align: center;
+}
+
+#DataMeasure th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+
+#DataMeasure th:hover{
+    cursor: pointer;
+}
+
+/* Màu cho các dòng chẵn và lẻ */
+#DataMeasure tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+#DataMeasure tbody tr:nth-child(even) {
+    background-color: #F8F6FF;
+}
+
+#DataMeasure tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+.detailData{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+
+.paginationPage{
+    margin-top: 10px;
+    display: flex;
+    justify-content: right;
+    justify-items: center;
+    gap: 30px;
+}
+
+
+.buttonControl{
+    display: flex;
+    gap: 30px;
+
+    align-items: center;
+}
+
+
+.buttonControl p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+
+}
+
+
+
+.buttonControl button{
+
+    width: 80px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #E59E1C;
+
+}
+
+.buttonControl button:hover{
+
+    cursor: pointer;
+
+}
+
+
+
+.opacityprevious{
+    opacity: 50%;
+}
+
+
+
+.opacitynext{
+    opacity: 50%;
+}
+
+
+
+
+h3{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: #E59E1C;
+}
+
+
+.datetime{
+    width: 150px;
+    height: 33px;
+    outline: none;
+    border: 1px solid #E59E1C;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+.datetime:hover{
+    cursor: pointer;
+}
+
+
+.datetime::placeholder{
+    font-size: 13px;
+}
+
+.boxtime{   
+
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.ptime{
+    background-color: #E59E1C;
+    color: white;
+    width: 80px;
+    height: 30px;
+    align-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+#searchDate{
+    
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #E59E1C;
+
+}
+
+#searchDate:hover{
+    
+   cursor: pointer;
+
+}
+
+#searchDate:active{
+    
+    padding-bottom: 2px;
+ 
+ }
+
+#pagecurrent{
+    background-color: #E59E1C;
+    color: white;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+
+#previous_button:active{
+    padding-bottom: 2px;
+}
+
+#next_button:active{
+    padding-bottom: 2px;
+}
+
+
+button{
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+}
+
+
+.cancelButton{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #ff6666;
+    display: none;
+}
+
+
+
+#cancelSearch:hover{
+    
+    cursor: pointer;
+ 
+ }
+ 
+#cancelSearch:active{
+     
+    padding-bottom: 2px;
+  
+}
+ 
+
+
+.custom-select {
+    width: 60px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #E59E1C;
+    font-family: "Montserrat", sans-serif;
+    appearance: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+
+
+
+
+.searchbar{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #E59E1C;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+.searchbar:hover{
+    cursor: pointer;
+}
+
+
+.searchbar::placeholder{
+    font-size: 13px;
+}
+
+.searchbar:focus {
+    border-color: #4CAF50; /* Màu viền khi được chọn, bạn có thể đổi màu tùy ý */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Tạo hiệu ứng ánh sáng quanh viền */
+}
+
+
+
+.optionselect{
+    width: 150px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: #E59E1C;
+    cursor: pointer;
+    padding-left: 15px;
+}

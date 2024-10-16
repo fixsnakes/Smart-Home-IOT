@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home IOT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styleactivity.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+</head>
+<body>
+    <div class="sidebar">
+
+        <div class="logosmarthome">
+            <i class="fa-brands fa-drupal"></i>
+            <p class="iotdescription">IOT CONTROL</p>
+
+        </div>
+
+        <div class="menubar">
+            <ul class="ulmenu">
+                <li class="listitems selected" id="dashboard">
+                    <i class="fa-solid fa-gauge"></i>
+                    <a href="iotdashboard.html">DASHBOARD</a>
+                </li>
+                <li class="listitems selected" id="measurementhistory">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <a href="datasensor.html">DATA SENSOR</a>
+                </li>
+                <li class="listitems selected" id="ControlDeviceHistory">
+                    <i class="fa-solid fa-chart-line" ></i>
+                    <a href="deviceactivity.html">DEVICE ACTIVITY</a>
+                </li>
+                <li class="listitems selected" id="userpage">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="profile.html">MY PROFILE</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+        <div class="social-container">
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-square-instagram"></i></li>
+                <li><i class="fa-brands fa-square-threads"></i></li>
+            </ul>
+        </div>
+
+
+        <div class="sidebar-background" style="background-image: url(../img/sidebar-5.jpg) "></div>
+
+    </div>
+
+   
+
+    <div class="main-container">
+        <div class="nav-menu">
+            <ul>
+                <li><i class="fa-solid fa-bell"></i></li>
+                <li id="name">Đào Tùng Lâm</li>
+                <li><img src="../img/ceo.jpg" alt="" id="user"></li>
+            </ul>
+        </div>
+        <div class="main-analyis">
+            
+
+            <h3>DEVICE ACTIVITY</h3>
+
+
+            <div class="boxtime">
+
+
+                <select id="deviceoptions">
+                    <option value="">Thiết Bị</option>
+                    <option value="Điều hòa">Điều hòa</option>
+                    <option value="Quạt">Quạt</option>
+                    <option value="Đèn">Đèn</option>
+                </select>
+
+
+                <select id="actionoption">
+                    <option value="">Hành Động</option>
+                    <option value="ON">ON</option>
+                    <option value="OFF">OFF</option>
+
+                </select>
+
+
+                <select id="sortoption">
+                    <option value="">Sort By Time</option>
+                    <option value="ASC">Increase</option>
+                    <option value="DESC">Decrease</option>
+
+                </select>
+
+                <input type="text" id="searchdata" class="searchbar" placeholder="2022-11-11 04:48:39" />
+
+                <button id="searchDate">Tìm Kiếm </button>
+                <button class="cancelButton" id="cancelSearch">Bỏ Tìm Kiếm </button>
+            </div>
+            
+
+            
+            
+
+            <table id="deviceactivity">
+                <thead>
+                    <tr>
+                        
+                        <th><div class = "detailData"><p>ID</p> </th>
+                        <th><div class = "detailData"><p>Thiết Bị</p> <span class="sort"></span></div> </th>
+                        <th><div class = "detailData"><p>Hành Động</p> <span class="sort"></span></div> </th>
+                        <th><div class = "detailData"><p>Thời Gian</p> <span class="sort"></span></div> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+
+            </table>
+
+            
+            <div class="paginationPage">
+
+
+                <div class="custom-select-container">
+                    <select id="customSelect" class="custom-select">
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+
+                  
+                <div class="buttonControl">
+
+                    <button id="previous_button" >Previous</button>
+
+                    <p id="pagecurrent">0 of 0</p>
+
+                    <button id="next_button">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./js/deviceActivity.js"></script>
+ 
+    
+</body>
+</html>

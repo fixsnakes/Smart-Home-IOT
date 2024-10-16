@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home IOT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styleprofile.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js" integrity="sha512-luMnTJZ7oEchNDZAtQhgjomP1eZefnl82ruTH/3Oj/Yu5qYtwL7+dVRccACS/Snp1lFXq188XFipHKYE75IaQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
+</head>
+<body>
+    <div class="sidebar">
+
+        <div class="logosmarthome">
+            <i class="fa-brands fa-drupal"></i>
+            <p class="iotdescription">IOT CONTROL</p>
+
+        </div>
+
+        <div class="menubar">
+            <ul class="ulmenu">
+                <li class="listitems selected" id="dashboard">
+                    <i class="fa-solid fa-gauge"></i>
+                    <a href="iotdashboard.html">DASHBOARD</a>
+                </li>
+                <li class="listitems selected" id="measurementhistory">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <a href="datasensor.html">DATA SENSOR</a>
+                </li>
+                <li class="listitems selected" id="ControlDeviceHistory">
+                    <i class="fa-solid fa-chart-line" ></i>
+                    <a href="deviceactivity.html">DEVICE ACTIVITY</a>
+                </li>
+                <li class="listitems selected" id="userpage">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="profile.html">MY PROFILE</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="social-container">
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-square-instagram"></i></li>
+                <li><i class="fa-brands fa-square-threads"></i></li>
+            </ul>
+        </div>
+
+
+        <div class="sidebar-background" style="background-image: url(../img/sidebar-5.jpg) "></div>
+
+    </div>
+
+   
+
+    <div class="main-container">
+        <div class="nav-menu">
+            <ul>
+                <li><i class="fa-solid fa-bell"></i></li>
+                <li id="name">Đào Tùng Lâm</li>
+                <li><img src="../img/ceo.jpg" alt="" id="user"></li>
+            </ul>
+        </div>
+        <div class="main-analyis">
+            <h2>My Profile</h2>
+
+            <div class="mainbox">
+
+                <div class="img">
+                    <img src="img/ceo.jpg" alt="" id="imgceo">
+                </div>
+
+
+                <div class="content">
+
+                    <p>Họ và Tên: Đào Tùng Lâm</p>
+                    <p>Mã Sinh Viên: B21DCCN475</p>
+
+                    <p>IOT CLASS: 05</p>
+                    <p>Quê quán: Hải Dương</p>
+
+                    <a href="https://github.com/fixsnakes" target="_blank">Github Link: https://github.com/fixsnakes</a>
+
+
+                    <a href="https://documenter.getpostman.com/view/30348542/2sAXxQcWpv#1e35c7e6-447b-4542-9c12-eb97ebf6998d" target="_blank">Api Docs: Postman Document</a>
+                   
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="./js/profile.js"></script>
+</body>
+</html>

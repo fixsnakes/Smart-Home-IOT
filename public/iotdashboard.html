@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home IOT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="..\css\styletest.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js" integrity="sha512-luMnTJZ7oEchNDZAtQhgjomP1eZefnl82ruTH/3Oj/Yu5qYtwL7+dVRccACS/Snp1lFXq188XFipHKYE75IaQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
+</head>
+<body>
+    <div class="sidebar">
+
+        <div class="logosmarthome">
+            <i class="fa-brands fa-drupal"></i>
+            <p class="iotdescription">IOT CONTROL</p>
+
+        </div>
+
+        <div class="menubar">
+            <ul class="ulmenu">
+                <li class="listitems selected" id="dashboard">
+                    <i class="fa-solid fa-gauge"></i>
+                    <a href="iotdashboard.html">DASHBOARD</a>
+                </li>
+                <li class="listitems selected" id="measurementhistory">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <a href="datasensor.html">DATA SENSOR</a>
+                </li>
+                <li class="listitems selected" id="ControlDeviceHistory">
+                    <i class="fa-solid fa-chart-line" ></i>
+                    <a href="deviceactivity.html">DEVICE ACTIVITY</a>
+                </li>
+                <li class="listitems selected" id="userpage">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="profile.html">MY PROFILE</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="social-container">
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-square-instagram"></i></li>
+                <li><i class="fa-brands fa-square-threads"></i></li>
+            </ul>
+        </div>
+
+
+        <div class="sidebar-background" style="background-image: url(../img/sidebar-5.jpg) "></div>
+
+    </div>
+
+   
+
+    <div class="main-container">
+        <div class="nav-menu">
+            <ul>
+                <li><i class="fa-solid fa-bell"></i></li>
+                <li id="name">Đào Tùng Lâm</li>
+                <li><img src="../img/ceo.jpg" alt="" id="user"></li>
+            </ul>
+        </div>
+        <div class="main-analyis">
+            <div class="inforA">
+                <div class="cambien nhietdo">
+
+
+                    <div class="detail-info">
+
+                        <i class="fa-solid fa-temperature-three-quarters"></i>
+                        <p id="description">Temperature</p>
+
+                    </div>
+                    <p class="numberdetail" id="numberoftemp">48 °C</p>
+                </div>
+                
+                <div class="cambien doam">
+                    <div class="detail-info">
+                        <i class="fa-solid fa-water"></i>
+                        <p id="description">Humidity</p>
+                    </div>
+                    <p class="numberdetail" id="numberofhumid">48 %</p>
+                </div>
+                <div class="cambien anhsang">
+                    <div class="detail-info">
+                        <i class="fa-regular fa-lightbulb"></i>
+                        <p id="description">Light</p>
+                    </div>
+                    <p class="numberdetail" id="numberoflight">11 LUX</p>
+                </div>
+            </div>
+
+
+            <div class="inforB">
+                <div class="chartcontainer">
+                    <p>Data Sensor Tracking</p>
+                    <canvas id="myChart"></canvas>
+                    
+                </div>
+
+
+                <div class="devicecontainer">
+                    <div class="device" id="aircondition">
+                        <img src="../img/air-conditioner.gif" alt="aircondition">
+
+
+
+                        <p id="status-air">OFF</p>
+
+                        <div class="buttonCheck">
+                            <button class="button ON" id="on-air">ON</button>
+                            <button class="button OFF" id="off-air">OFF</button>
+                        </div>
+                        
+
+
+                    </div>
+                    <div class="device" id="lightroom">
+                        <img src="../img/light-bulb.gif" alt="lightroom" >
+                        <p id="status-light">OFF</p>
+
+                        <div class="buttonCheck">
+                            <button class="button ON" id="on-light">ON</button>
+                            <button class="button OFF" id="off-light">OFF</button>
+                        </div>
+                    </div>
+                    <div class="device" id="fan">
+                        <img src="../img/fan.gif" alt="fan">
+                        <p id="status-fan">OFF</p>
+                        <div class="buttonCheck">
+                            <button class="button ON" id="on-fan">ON</button>
+                            <button class="button OFF" id="off-fan">OFF</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
