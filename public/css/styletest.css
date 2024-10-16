@@ -1,0 +1,449 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+}
+
+.sidebar{
+    color: white;
+    width: 250px;
+    height: 100%;
+    padding: 30px;
+    background-color:orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+}
+
+
+.sidebar-background{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    opacity: 20%;
+}
+
+#smart_home_logo{
+    width: 80px;
+    height: 80px;
+}
+
+.logosmarthome{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.ulmenu{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.ulmenu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+
+
+
+.ulmenu li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.ulmenu li:hover{
+
+    background-color: rgba(255, 255, 255, 0.13);
+
+}
+
+
+.logomenu{
+    width: 30px;
+    height: 30px;
+
+}
+
+.ulmenu li:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.13);
+
+}
+
+
+.social-container{
+    margin-top: 100px;
+}
+
+.social-container ul{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.social-container ul li{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.fa-brands{
+    font-size: 40px;
+}
+
+
+
+.main-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F8;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    margin-left: 250px;
+}
+
+
+
+.nav-menu{
+    width: 100%;
+    height: 60px;
+    background-color: #E59E1C;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+
+#user{
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    
+}
+
+.nav-menu ul{
+    margin-right: 50px;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+#name{
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+.main-analyis{
+    margin-top: 10px;
+    padding: 10px;
+    width: 1000px;
+    height: 100%;
+    background-color: #F7F7F8;
+    
+
+}
+
+
+
+
+.main-analyis .inforA{
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    margin-bottom: 10px;
+    
+}
+
+
+ 
+
+
+.main-analyis .inforA .cambien{
+
+    border: 1px solid #DFDFDF;
+    border-radius: 10px;
+    padding: 30px;
+    width: 250px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+
+
+.detail-info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+
+}
+
+
+
+
+.detail-info p {
+    font-size: 18px;
+}
+
+.picDetail {
+    width: 30px;
+    height: 30px;
+}
+
+.cambien{
+    background-color: white;
+}
+
+.cambien .numberdetail {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+.inforB{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.chartcontainer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 650px;
+    height:100%;
+    border: 2px solid #DFDFDF;
+    padding: 20px;
+    
+}
+
+.chartcontainer p{
+    font-size: 13px;
+}
+
+
+.devicecontainer img{
+    width: 80px;
+}
+
+.devicecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.device{
+
+    width: 320px;
+
+    height: 100px;
+    border: 1px solid #DFDFDF ;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    display: flex;  
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+.device p{
+
+    width: 20px;
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+
+
+.fa-brands{
+    color: white;
+}
+
+.social-container{
+    margin-top: 20px;
+}
+
+.fa-solid{
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+
+.iotdescription{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.nhietdo{
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.doam{
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.anhsang{
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.fa-temperature-three-quarters{
+    font-size: 40px;
+}
+
+.fa-water{
+    font-size: 40px;
+}
+
+.fa-lightbulb{
+    font-size: 40px;
+}
+
+#description{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.numberdetail{
+    font-weight: bold;
+}
+
+
+.button{
+    width: 60px;
+    height: 30px;
+    border: none;
+    outline: none;
+
+    border-radius: 20px;
+
+    color: white;
+}
+
+
+
+.button:hover{
+    cursor: pointer;
+}
+
+.ON{
+    background-color: #86D293;
+}
+
+
+.OFF{
+    background-color: #EF5A6F;
+}
+
+
+.ON:active{
+    padding-bottom: 2px;
+}
+
+
+.OFF:active{
+    padding-bottom: 2px;
+}
+
+
+
+
+
+.fa-brands{
+    font-size: 30px;
+}
+
+
+.logosmarthome{
+    margin-bottom: 40px;
+}
