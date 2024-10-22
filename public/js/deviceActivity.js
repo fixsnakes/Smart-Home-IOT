@@ -65,9 +65,21 @@ async function LoadData(){
         const offset = (currentPage - 1)*pageLimit;
         
 
-        const repsonse = await fetch(`http://127.0.0.1:3000/api/getdevicehistory?offset=${offset}&limit=${pageLimit}`)
+        const device = document.getElementById('deviceoptions').value;
+        const action = document.getElementById('actionoption').value;
+        const sort = document.getElementById('sortoption').value;
+        const value = document.getElementById('searchdata').value;
 
-        const {data,totalData} = await repsonse.json();
+
+        
+
+        console.log(action);
+
+
+
+        const response = await fetch(`http://127.0.0.1:3000/api/getdevicehistory/?offset=${offset}&limit=${pageLimit}&device=${device}&action=${action}&sort=${sort}&value=${value}`)
+
+        const {data,totalData} = await response.json();
 
         rendertable(data,totalData);
 
@@ -95,7 +107,7 @@ async function LoadDataFilter() {
 
 
 
-    const response = await fetch(`http://127.0.0.1:3000/api/getdevicehistory/filter?offset=${offset}&limit=${pageLimit}&device=${device}&action=${action}&sort=${sort}&value=${value}`)
+    const response = await fetch(`http://127.0.0.1:3000/api/getdevicehistory/?offset=${offset}&limit=${pageLimit}&device=${device}&action=${action}&sort=${sort}&value=${value}`)
 
     const {data,totalData} = await response.json();
 

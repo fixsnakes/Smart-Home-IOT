@@ -79,7 +79,6 @@ mqttControl.on('message', (topic,message) => {
             io.emit('dataSensor', [temperature, humidity, light]);
             
 
-            console.log([temperature,humidity,light])
             //UpdateDataSensor(temperature,humidity,light,datenow);
 
             
@@ -93,8 +92,7 @@ mqttControl.on('message', (topic,message) => {
         UpdateDataDevice("Điều hòa",message.toString(),formatdate())
     }
 
-    console.log(topic)
-
+ 
     if(topic === "esp32/denStatus"){
         console.log(message.toString());
 

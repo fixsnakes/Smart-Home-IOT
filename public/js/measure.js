@@ -68,9 +68,15 @@ async function LoadData(){
         const offset = (currentPage - 1)*pageLimit;
         
 
-        const repsonse = await fetch(`http://127.0.0.1:3000/api/getmeasuredata?offset=${offset}&limit=${pageLimit}`)
+        const sort = document.querySelector('#sortOptions').value;
+        const sortType = document.querySelector('#sortType').value;
+        const valueSearch = document.querySelector('#searchdata').value;
+    
+        console.log([sort,sortType,valueSearch])
+    
+        const response = await fetch(`http://127.0.0.1:3000/api/getmeasuredata/?offset=${offset}&limit=${pageLimit}&Sort=${sort}&SortType=${sortType}&value=${valueSearch}`)
 
-        const {data,totalData} = await repsonse.json();
+        const {data,totalData} = await response.json();
 
         rendertable(data,totalData);
 
@@ -92,7 +98,7 @@ async function LoadDataFilter() {
 
     console.log([sort,sortType,valueSearch])
 
-    const response = await fetch(`http://127.0.0.1:3000/api/getmeasuredata/filter?offset=${offset}&limit=${pageLimit}&Sort=${sort}&SortType=${sortType}&value=${valueSearch}`)
+    const response = await fetch(`http://127.0.0.1:3000/api/getmeasuredata/?offset=${offset}&limit=${pageLimit}&Sort=${sort}&SortType=${sortType}&value=${valueSearch}`)
 
     const {data,totalData} = await response.json();
 

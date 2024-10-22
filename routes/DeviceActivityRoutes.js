@@ -1,6 +1,6 @@
 
 
-const {GetDeviceHistory,GetDeviceHistoryFilter} =  require('../controllers/getDeviceActivity.js');
+const {GetDeviceHistoryFilter} =  require('../controllers/getDeviceActivity.js');
 
 
 
@@ -12,12 +12,9 @@ const router = express.Router();
 
 router
     .route('/')
-    .get(GetDeviceHistory);
+    .get(GetDeviceHistoryFilter);
 
-router
-    .route('/filter')
-    .get (GetDeviceHistoryFilter);
-    
+
 
 
 module.exports = router;
